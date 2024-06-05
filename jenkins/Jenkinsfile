@@ -54,7 +54,7 @@ pipeline {
             }
         }
 
-        stage('Continuous Integration - Merge to master') {
+        stage('Continuous Integration - Merge to master1') {
             when {
                 branch "develop"
             }
