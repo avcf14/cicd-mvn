@@ -41,8 +41,8 @@ pipeline {
                 branch "CICD-*"
             }
             steps {
-                sh "git config --global user.email '1232495@isep.ipp.pt'"
-                sh "git config --global user.name 'avcf'"
+                sh "git config --global user.email 1232495@isep.ipp.pt"
+                sh "git config --global user.name avcf14"
                 sh "git checkout -f origin/develop"
                 sh "git merge --ff ${env.GIT_COMMIT}"
                 script {
@@ -59,8 +59,8 @@ pipeline {
                 branch "develop"
             }
             steps {
-                sh "git config --global user.email '1232495@isep.ipp.pt'"
-                sh "git config --global user.name 'avcf'"
+                sh "git config --global user.email 1232495@isep.ipp.pt"
+                sh "git config --global user.name avcf14"
                 sh "git checkout -f origin/master"
                 sh "git merge --ff ${env.GIT_COMMIT}"
                 script {
